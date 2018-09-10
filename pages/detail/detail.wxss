@@ -1,0 +1,92 @@
+/* pages/detail/detail.wxss */
+.container .detail-top {
+  padding: 20rpx;
+  border-bottom: 4rpx solid #444
+}
+.container .detail-top .book{
+  display: flex;
+
+}
+.container .detail-top .book .book-img .image{
+  width: 230rpx;
+  height: 300rpx;
+}
+.main-msg{
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+.main-msg .book-title{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.main-msg .author-name,.read-num,.like-num{
+  font-size: 28rpx;
+  color: #777;
+}
+.detail-top .user-bar{
+  height: 80rpx;
+  display: flex;
+  padding-top: 40rpx;
+  justify-content: space-between;
+}
+.detail-top .user-bar .user-button{
+  height: 60rpx;
+  width: 180rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  
+}
+
+.about{
+   border-bottom: 4rpx solid #444
+}
+.about .top{
+  font-size:30rpx;
+  font-weight: bold;
+}
+.about .text{
+  font-size: 28rpx;
+  line-height: 1.5;
+}
+.about .bar-about{
+  display: flex;
+  padding: 30rpx 0;
+  justify-content: space-between
+}
+.about .directory{
+padding-right: 20rpx;
+}
+ .about .directory .directory-l{
+   font-size: 40rpx;
+   font-weight: bold;
+ }
+  .about .directory .directory-r{
+    font-size: 30rpx;
+  }
+.bar-about .time{
+  font-size: 30rpx;
+ margin-top: 10rpx;
+}
+.bottom-bar{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20rpx;
+  box-shadow: 0 0 2px 2px rgba(0,0,0, .2);
+}
+ 
+.bottom-bar{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20rpx;
+  box-shadow: 0 0 2px 2px rgba(0,0,0, .2);
+}
+.bottom-bar .readIt{
+  background-color: rgb(49, 139, 241);
+  color: white;
+}

@@ -1,0 +1,67 @@
+/* pages/text/text.wxss */
+
+@import '/static/iconfont/iconfont.wxss';
+
+.text{
+  padding: 0 20rpx;
+}
+.catalog2{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding-bottom: 100rpx;
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  z-index: 996;
+  width: 680rpx;
+  transform: translate3d(-100%,0,0);
+  transition: transform 0.3s ease;
+}
+.active{
+  transform: translate3d(0,0,0);
+}
+
+.catalog2 .link2{
+  font-size: 14px;
+  color: #333;
+  line-height: 70rpx;
+  height: 70rpx;
+  padding-left: 20rpx;
+  border-bottom: 2rpx solid #333;
+}
+.mask{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 888;
+  background: rgba(0, 0, 0, .2);
+}
+.menu{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 998;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #f1f1f1;
+  line-height: 100rpx;
+  height: 100rpx;
+  background: #fff;
+}
+
+.menu .iconfont {
+  flex: 1;
+  text-align: center;
+  font-size: 60rpx;
+  font-weight: bold;
+  color: rgb(22, 115, 221);
+}
+
+.menu .iconfont:active {
+  background: #f1f1f1;
+}
+

@@ -1,0 +1,31 @@
+<!--pages/collections/collections.wxml-->
+<view>
+
+  <view class='container' wx:for="{{bookData}}" wx:key="index">
+    <view>
+      <image src='{{item.book.img}}'  class='book-img'></image>
+    </view>
+    <view class='text'>
+      <view class='book-name'>{{item.book.title}}</view>
+      <view class='book-chapter'>
+      第{{item.title.index}}/{{item.title.total}}章
+      </view>
+
+      <!-- 进度条 -->
+      <view class='read-many'>
+        <progress percent="{{item.title.percent}}" show-info  stroke-width="12" color="#f1f1f1" activeColor="#87ceeb" active="true"/>
+      </view>
+
+      <view class='last-read'>
+        <text class='read-title'>上次阅读->{{item.title.title}}</text>
+        <text class='day-ago'>3天前</text>
+      </view>
+      
+      <view class='read-continue'>
+        <button class='read-btn' bindtap='readContinue' data-textid="{{item.title._id}}" data-bookid="{{item.title.bookId}}" >继续阅读</button>
+        <button class='read-btn' bindtap='readMassage' data-bookid="{{item.title.bookId}}" >查看文档</button>
+      </view>
+    </view>
+  </view>
+
+</view> 

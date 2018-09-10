@@ -1,0 +1,46 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/directory/directory",
+    "pages/text/text",
+    "pages/collections/collections",
+    "pages/personal/personal",
+    "pages/personal/my-collection/my-collection"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87ceeb",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "云书在线"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#87ceeb",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/static/img/tabbar/firsth.png",
+        "selectedIconPath": "/static/img/tabbar/firstl.png"
+      },
+      {
+        "pagePath": "pages/collections/collections",
+        "text": "我的阅读",
+        "iconPath": "/static/img/tabbar/likeh.png",
+        "selectedIconPath": "/static/img/tabbar/likel.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/static/img/tabbar/myh.png",
+        "selectedIconPath": "/static/img/tabbar/myl.png"
+      }
+    ]
+  }
+}

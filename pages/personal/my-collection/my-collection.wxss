@@ -1,0 +1,28 @@
+/* pages/my-collection/my-collection.wxss */
+.collection{
+
+  
+
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+  width: 710rpx;
+}
+.collection .item{
+  width: 355rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.collection .item .img{
+  width: 230rpx;
+  height: 300rpx;
+}
+.collection .item .text{
+  font-size: 30rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}

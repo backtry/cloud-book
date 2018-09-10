@@ -1,0 +1,52 @@
+/* pages/collections/collections.wxss */
+.container{
+  display: flex;
+  margin-top: 20rpx;
+}
+.container .book-img{
+  width: 230rpx;
+  height: 300rpx;
+}
+.text{
+  margin-left: 20rpx;
+  width: 480rpx
+}
+.text .book-name{
+  font-size: 32rpx;
+  font-weight: bold;
+
+}
+.text .book-chapter{
+  margin-top: 15rpx;
+  font-size: 28rpx;
+}
+.text .read-many{
+   margin-top: 15rpx;
+
+}
+.text .last-read{
+  font-size: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  height: 70rpx;
+}
+.text .last-read .read-title{
+  width: 360rpx;
+  height: 70rpx;
+  
+}
+.text .last-read .day-ago{
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.read-continue{
+  display: flex;
+  height: 90rpx;
+  align-items: center;
+}
+.read-continue .read-btn{
+  height: 45rpx;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 45rpx;
+}

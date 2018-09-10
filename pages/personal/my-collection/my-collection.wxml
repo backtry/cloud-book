@@ -1,0 +1,14 @@
+<!--pages/my-collection/my-collection.wxml-->
+
+<view class='collection'>
+  <view wx:for="{{bookData}}" wx:key="index" >
+    
+ 
+  <view bindtouchstart="bindTouchStart" bindtouchend="bindTouchEnd" bindlongtap="bingLongTap" bindtap="bindTap" class='item' data-bookid="{{item.book._id}}" >
+    <image src="{{item.book.img}}" class='img'></image>
+    <text class='book-name' class='text'>{{item.book.title}}</text>
+  </view>
+  
+  </view>
+ 
+</view>

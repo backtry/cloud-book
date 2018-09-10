@@ -1,0 +1,45 @@
+<view>
+<view>
+<image src='/static/img/loading.svg'  wx:if="{{isLoading}}"   class='loading'></image>
+</view>
+
+<view class="container" wx:if="{{!isLoading}}" >
+
+  <view class="detail-top"  >
+        
+    <view class='book'>
+      <view class='book-img'>
+      <image src='{{bookData.data.img}}' class='image'></image>
+      </view>
+      <view class='main-msg'>
+        <view class='book-title'>{{bookData.data.title}}</view>
+        <view class='author-name'>作者:{{bookData.data.author}}</view>
+        <view class='read-num'>{{bookData.data.looknums}}人在看</view>
+        <view class='like-num'>{{bookData.data.index}}人喜欢</view>
+      </view>
+    </view>
+    <view class='user-bar'>
+      <button class='user-button' disabled='{{bookData.isCollect == 0 ? false:true}}' bindtap='bookCollect' >  {{bookData.isCollect == 0? '收藏' : '已收藏'}}</button>
+      <button class='user-button' open-type="share">分享好友</button>
+    </view>
+  </view>
+  <view class='about'>
+    <view class='top'>
+      <text>简介</text>
+    </view> 
+    <view class='text'>{{bookData.data.desc}}</view>
+    <view class='bar-about'>
+      <view class='directory'>
+      <text class='directory-l' bindtap="jumpDirectory" wx:key="{{index}}"  data-id="{{bookData.data._id}}">查看目录</text>
+      <text class='directory-r'>共{{bookData.length}}章</text>
+      </view>
+      <view class='time'>
+      <!-- {{bookData.data.updateTime}} -->
+      {{updatetime.substring(0,10)}}2018-08-01更新</view>
+    </view>
+  </view>
+  <view class='bottom-bar'>
+    <button class='readIt' bindtap="jumpDirectory">阅读该书籍</button>
+  </view>
+</view>
+</view>

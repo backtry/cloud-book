@@ -1,0 +1,57 @@
+<!--index.wxml-->
+
+<view>
+<view class="container">
+<image src='/static/img/loading.svg'  wx:if="{{isLoading}}"   class='loading'></image>
+<swiper indicator-dots="{{indicatorDots}}
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{swiperData}}" wx:key= "{{index}}">
+    <swiper-item bindtap="jumpBook" wx:key="{{index}}"  data-id="{{item.book._id}}">
+      <image src="{{item.img}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='main-container'>
+  <view class='container-item' wx:for='{{mainContent}}' wx:key="{{index}}" >
+    <view class='title'>
+      {{item.title}}
+    </view>
+    <view class='book' wx:for='{{item.books}}' wx:key="{{index}}" wx:for-item="bookItem">
+      <view class='book-image'>
+      <image class='image' src='{{bookItem.img}}' bindtap="jumpBook" wx:key="{{index}}"  data-id="{{bookItem._id}}"></image>
+      </view>
+      <view class='text'>
+        <view class='book-name'>{{bookItem.title}}</view>
+        <view class='book-about'>{{bookItem.desc}}</view>
+        <view class='bottom'>
+          <view class='author'>{{bookItem.author}}</view>
+          <view class='read-about'>
+            <text>{{bookItem.index}}人喜欢</text>
+            <!-- <text>{{title}}</text> -->
+            <text>{{bookItem.looknums}}人在阅读</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+</view>
+<!-- 下拉加载 -->
+<view wx:if="{{!isLoading}}">
+  <view class='bottomload' wx:if="{{hasMore}}">
+    <image  src='/static/img/bottomload.svg' class='bottomload-img' ></image>
+    <text class='bottomload-text'>努力加载了，喵~~~</text>
+  </view>
+<!-- 底线 -->
+  <view class='bottomline' wx:else >
+    <text class='bottomline-text'>我是有底线的，喵~~~</text>
+    <text class='line'></text>
+  </view>
+</view>
+</view>
+<view>
+  <view>
+    <image></image>
+    <text></text>
+  </view>
+</view> 

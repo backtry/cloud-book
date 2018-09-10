@@ -1,0 +1,93 @@
+
+
+.slide-image{
+ width: 710rpx;
+ height: 350rpx;
+}
+
+.container-item{
+  margin-top:40rpx;
+}
+.container-item .title{
+  font-size: 16px;
+  padding-left: 20rpx;
+  border-left: 2px solid #000;
+  line-height: 32rpx;
+  height: 32rpx;
+}
+.container-item .book{
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.book-image .image{
+  width: 230rpx;
+  height: 300rpx;
+}
+.text{
+ margin-left: 30rpx;
+  padding-bottom: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text .book-name{
+  font-size: 16px;
+  color: #333;
+}
+.text .book-about{
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  line-height: 1.5;
+  color: #444;
+  font-size: 14px;
+}
+
+.text .bottom{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.bottomload{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+}
+.bottomload .bottomload-img{
+ height: 50rpx;
+  width: 50rpx;
+}
+.bottomload .bottomload-text{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.bottomline{
+  height: 100rpx;
+  background-color: #f1f1f1;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+   position: relative;
+}
+.bottomline .bottomline-text{
+ 
+  z-index: 998;
+  font-size: 30rpx;
+  font-weight: blod;
+  color: #333;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.bottomline .line{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #444;
+  height: 2rpx;
+  z-index: 333;
+}

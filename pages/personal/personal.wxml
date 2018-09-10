@@ -1,0 +1,28 @@
+<!--pages/personal/personal.wxml-->
+
+<view class='container'>
+  <view class='personal'>
+    <view class='portrait'>
+        <button open-type="getUserInfo" class='get-user'>
+          <image src='{{userInfo.avatarUrl}}' class='user-img'>
+      
+          </image>
+        </button>
+    </view>
+    <view class='text'>
+      <text class='nickname'>{{userInfo.nickName}}</text>
+      <text class='tallk'>他什么都没留下，喵~~~</text>
+    </view>
+  </view>
+  <view class='bottom-bar'>
+    <view class='collection' bindtap='collection'>
+      <text>{{bookData.length}}</text>
+      <text class='massage'>收藏</text>
+    </view>
+    <view class='focus'>
+      <text>2</text>
+      <text class='massage'>关注</text>
+    </view>
+  </view>
+    
+</view>

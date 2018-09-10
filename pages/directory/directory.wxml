@@ -1,0 +1,16 @@
+<!--pages/directory/directory.wxml-->
+<!-- <text>pages/directory/directory.wxml</text>
+<view class='container'>
+  <view class='directory' wx:for="catalogData" wx:key="{{index}}">
+  <navigator url='' >{{item.title}}</navigator>
+  </view>
+</view> -->
+<view class="container">
+
+  <view wx:for="{{catalogData}}" wx:key="{{index}}" class="directory">
+    <navigator url="{{'/pages/text/text?id=' + item._id + '&bookId=' + bookId}}" class="link">
+      {{item.title}}
+    </navigator>
+  </view>
+</view> 
+
